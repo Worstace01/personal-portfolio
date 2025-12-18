@@ -2,7 +2,7 @@
 
 A high-end, interactive personal portfolio website designed to showcase projects and skills with a "senior dev" aesthetic.
 
-![Portfolio Preview](./pic/andrie.jpg)
+
 
 ## 🚀 Features
 
