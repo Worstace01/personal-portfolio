@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-End Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader-text">PORTFOLIO.</div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="mouse-glow"></div>
+    <div class="ambient-light"></div>
+
+    <nav>
+        <div class="logo">PORTFOLIO.</div>
+
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#work" class="hover-link">Work</a>
+                <a href="#about" class="hover-link">About</a>
+                <a href="#certificates" class="hover-link">Credentials</a>
+                <a href="#contact" class="hover-link">Contact</a>
+            </div>
+
+            <button id="theme-toggle" class="hover-link" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <path d="M12 1v2" />
+                    <path d="M12 21v2" />
+                    <path d="M4.22 4.22l1.42 1.42" />
+                    <path d="M18.36 18.36l1.42 1.42" />
+                    <path d="M1 12h2" />
+                    <path d="M21 12h2" />
+                    <path d="M4.22 19.78l1.42-1.42" />
+                    <path d="M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+
+            <div class="hamburger hover-link">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#certificates" class="mobile-link">Credentials</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Building Digital <br> Experiences.</h1>
+            <p>I am a creative developer and designer focused on crafting clean, user-friendly, and interactive web
+                interfaces.</p>
+            <a href="#work" class="cta-btn hover-link">View Selected Work</a>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="blob-bg"></div>
+            <a href="https://github.com/Worstace01" target="_blank" aria-label="Visit GitHub Profile">
+                <img src="pic/andrie.jpg" alt="Profile Picture" class="profile-img floating-img hover-link">
+            </a>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2 class="section-header reveal">Selected Work</h2>
+
+        <div class="project-grid">
+
+            <!-- Quiz Quest -->
+            <a href="https://github.com/Worstace01/quiz-quest" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Quiz Quest</h3>
+                    <p>An interactive quiz application to test your knowledge.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Traffic Sim -->
+            <a href="https://github.com/Worstace01/trafficSim-main" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Traffic Sim</h3>
+                    <p>A simulation tool for modeling traffic flow and optimizing routes.</p>
+                    <div class="tags">
+                        <span class="tag">Simulation</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Digital Library -->
+            <a href="https://github.com/Worstace01/Digital_library" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Digital Library</h3>
+                    <p>A comprehensive system for managing digital book collections and members.</p>
+                    <div class="tags">
+                        <span class="tag">Management</span>
+                        <span class="tag">Database</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- -ace -->
+            <a href="https://github.com/Worstace01/-ace" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Project Ace</h3>
+                    <p>A versatile utility project for streamlined operations.</p>
+                    <div class="tags">
+                        <span class="tag">Utility</span>
+                        <span class="tag">Tool</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Milk Tea Inventory -->
+            <a href="https://github.com/Worstace01/milktea_Inventory1" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Milk Tea Inventory</h3>
+                    <p>Inventory management specifically designed for milk tea businesses.</p>
+                    <div class="tags">
+                        <span class="tag">Business</span>
+                        <span class="tag">Inventory</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Wonder Pet -->
+            <a href="https://github.com/Worstace01/wonder-pet" target="_blank" class="card reveal hover-link">
+                <div class="card-content">
+                    <h3>Wonder Pet</h3>
+                    <p>A delightful virtual pet experience.</p>
+                    <div class="tags">
+                        <span class="tag">Game</span>
+                        <span class="tag">Virtual Pet</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-header reveal">Expertise</h2>
+        <div class="skills-container reveal">
+            <div class="skill-item hover-link">User Interface Design</div>
+            <div class="skill-item hover-link">Frontend Development</div>
+            <div class="skill-item hover-link">Motion Graphics</div>
+            <div class="skill-item hover-link">Design Systems</div>
+            <div class="skill-item hover-link">Accessibility (a11y)</div>
+            <div class="skill-item hover-link">Server Side Rendering</div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2 class="section-header reveal">Credentials</h2>
+
+        <div class="cert-list">
+
+            <div class="cert-item reveal hover-link">
+                <div class="cert-date">2024</div>
+                <div class="cert-details">
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p>Amazon Web Services (Professional Level)</p>
+                </div>
+                <div class="cert-meta">
+                    <span class="cert-id">ID: 892-332-LSA</span>
+                </div>
+                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="cert-item reveal hover-link">
+                <div class="cert-date">2023</div>
+                <div class="cert-details">
+                    <h3>Google Professional Cloud DevOps</h3>
+                    <p>Google Cloud Platform</p>
+                </div>
+                <div class="cert-meta">
+                    <span class="cert-id">ID: G-449201</span>
+                </div>
+                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="cert-item reveal hover-link">
+                <div class="cert-date">2022</div>
+                <div class="cert-details">
+                    <h3>Meta Front-End Developer Professional</h3>
+                    <p>Coursera / Meta</p>
+                </div>
+                <div class="cert-meta">
+                    <span class="cert-id">ID: K92-JD8-22</span>
+                </div>
+                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-layout">
+            <div class="contact-info reveal">
+                <h2 class="section-header">Let's Talk</h2>
+                <p>I'm currently available for freelance projects and open to full-time opportunities. If you have an
+                    idea, let's make it happen.</p>
+                <a href="mailto:andriedeuna@gmail.com" class="email-link hover-link">andriedeuna@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="bg-3d.js"></script>
+</body>
+
+</html>
