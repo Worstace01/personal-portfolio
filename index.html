@@ -4,7 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High-End Portfolio</title>
+    <title>Andrie Deuna — Creative Developer & Software Engineer</title>
+
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="description" content="Personal portfolio of Andrie Deuna — Creative Developer & Software Engineer crafting clean, high-performance, and interactive web experiences.">
+    <meta name="keywords" content="Andrie Deuna, Creative Developer, Web Developer, Frontend Engineer, Software Engineer, Portfolio, UI/UX Design, JavaScript, HTML, CSS, Three.js">
+    <meta name="author" content="Andrie Deuna">
+
+    <meta property="og:title" content="Andrie Deuna — Creative Developer & Software Engineer">
+    <meta property="og:description" content="Crafting clean, user-friendly, and interactive digital web experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Worstace01">
+    <meta property="og:image" content="pic/andrie.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andrie Deuna — Creative Developer & Software Engineer">
+    <meta name="twitter:description" content="Crafting clean, user-friendly, and interactive digital web experiences.">
+    <meta name="twitter:image" content="pic/andrie.jpg">
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,7 +34,7 @@
 <body>
 
     <div class="preloader">
-        <div class="loader-text">PORTFOLIO.</div>
+        <div class="loader-text">ANDRIE.</div>
     </div>
 
     <div class="cursor-dot" data-cursor-dot></div>
@@ -28,7 +44,7 @@
     <div class="ambient-light"></div>
 
     <nav>
-        <div class="logo">PORTFOLIO.</div>
+        <a href="#" class="logo hover-link">ANDRIE.</a>
 
         <div class="nav-right">
             <div class="nav-links">
@@ -57,10 +73,10 @@
                 </svg>
             </button>
 
-            <div class="hamburger hover-link">
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <button class="hamburger hover-link" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
@@ -73,16 +89,19 @@
 
     <section class="hero">
         <div class="hero-text">
+            <div class="hero-badge reveal">Available for new opportunities</div>
             <h1>Building Digital <br> Experiences.</h1>
-            <p>I am a creative developer and designer focused on crafting clean, user-friendly, and interactive web
-                interfaces.</p>
-            <a href="#work" class="cta-btn hover-link">View Selected Work</a>
+            <p>Hi, I'm <strong>Andrie Deuna</strong> — a creative developer and designer focused on crafting clean, user-friendly, and interactive web interfaces.</p>
+            <div class="hero-actions">
+                <a href="#work" class="cta-btn primary hover-link">View Selected Work</a>
+                <a href="#contact" class="cta-btn secondary hover-link">Get In Touch</a>
+            </div>
         </div>
 
         <div class="hero-image-container">
             <div class="blob-bg"></div>
-            <a href="https://github.com/Worstace01" target="_blank" aria-label="Visit GitHub Profile">
-                <img src="pic/andrie.jpg" alt="Profile Picture" class="profile-img floating-img hover-link">
+            <a href="https://github.com/Worstace01" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile">
+                <img src="pic/andrie.jpg" alt="Andrie Deuna Profile Picture" class="profile-img floating-img hover-link">
             </a>
         </div>
     </section>
@@ -93,90 +112,195 @@
         <div class="project-grid">
 
             <!-- Quiz Quest -->
-            <a href="https://github.com/Worstace01/quiz-quest" target="_blank" class="card reveal hover-link">
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Quiz Quest</h3>
-                    <p>An interactive quiz application to test your knowledge.</p>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Education</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Quiz Quest</h3>
+                        <div class="tags">
+                            <span class="tag">Java / GDScript</span>
+                            <span class="tag">Education</span>
+                        </div>
                     </div>
+                    <p>An interactive quiz application designed to test your knowledge with dynamic scoring and immediate feedback.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Quiz Quest" 
+                        data-demo-type="video"
+                        data-video-url="" 
+                        data-project-url="https://worstace01.github.io/quiz-quest/" 
+                        data-github-url="https://github.com/Worstace01/quiz-quest"
+                        aria-label="Preview Quiz Quest Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/quiz-quest" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Quiz Quest Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
             <!-- Traffic Sim -->
-            <a href="https://github.com/Worstace01/trafficSim-main" target="_blank" class="card reveal hover-link">
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Traffic Sim</h3>
-                    <p>A simulation tool for modeling traffic flow and optimizing routes.</p>
-                    <div class="tags">
-                        <span class="tag">Simulation</span>
-                        <span class="tag">Algorithms</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Traffic Sim</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
                     </div>
+                    <p>A simulation tool for modeling traffic flow, analyzing congestion patterns, and optimizing routes.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Traffic Sim" 
+                        data-demo-type="video"
+                        data-video-url=""
+                        data-project-url="https://worstace01.github.io/trafficSim-main/" 
+                        data-github-url="https://github.com/Worstace01/trafficSim-main"
+                        aria-label="Preview Traffic Sim Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/trafficSim-main" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Traffic Sim Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
             <!-- Digital Library -->
-            <a href="https://github.com/Worstace01/Digital_library" target="_blank" class="card reveal hover-link">
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Digital Library</h3>
-                    <p>A comprehensive system for managing digital book collections and members.</p>
-                    <div class="tags">
-                        <span class="tag">Management</span>
-                        <span class="tag">Database</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Digital Library</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Database</span>
+                        </div>
                     </div>
+                    <p>A comprehensive management system for cataloging digital book collections, borrowing workflows, and member records.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Digital Library" 
+                        data-demo-type="web"
+                        data-project-url="https://worstace01.github.io/Digital_library/" 
+                        data-github-url="https://github.com/Worstace01/Digital_library"
+                        aria-label="Preview Digital Library Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/Digital_library" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Digital Library Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
-            <!-- -ace -->
-            <a href="https://github.com/Worstace01/-ace" target="_blank" class="card reveal hover-link">
+            <!-- Project Ace -->
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Project Ace</h3>
-                    <p>A versatile utility project for streamlined operations.</p>
-                    <div class="tags">
-                        <span class="tag">Utility</span>
-                        <span class="tag">Tool</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Project Ace</h3>
+                        <div class="tags">
+                            <span class="tag">Utility</span>
+                            <span class="tag">Tool</span>
+                        </div>
                     </div>
+                    <p>A versatile developer utility suite designed for automated task execution and streamlined operations.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Project Ace" 
+                        data-demo-type="web"
+                        data-project-url="https://worstace01.github.io/-ace/" 
+                        data-github-url="https://github.com/Worstace01/-ace"
+                        aria-label="Preview Project Ace Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/-ace" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Project Ace Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
             <!-- Milk Tea Inventory -->
-            <a href="https://github.com/Worstace01/milktea_Inventory1" target="_blank" class="card reveal hover-link">
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Milk Tea Inventory</h3>
-                    <p>Inventory management specifically designed for milk tea businesses.</p>
-                    <div class="tags">
-                        <span class="tag">Business</span>
-                        <span class="tag">Inventory</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Milk Tea Inventory</h3>
+                        <div class="tags">
+                            <span class="tag">Python / Business</span>
+                            <span class="tag">Inventory</span>
+                        </div>
                     </div>
+                    <p>An inventory management dashboard tailored specifically for tracking stock, sales, and supply chains in milk tea businesses.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Milk Tea Inventory" 
+                        data-demo-type="video"
+                        data-video-url=""
+                        data-project-url="https://worstace01.github.io/milktea_Inventory1/" 
+                        data-github-url="https://github.com/Worstace01/milktea_Inventory1"
+                        aria-label="Preview Milk Tea Inventory Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/milktea_Inventory1" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Milk Tea Inventory Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
             <!-- Wonder Pet -->
-            <a href="https://github.com/Worstace01/wonder-pet" target="_blank" class="card reveal hover-link">
+            <div class="card reveal hover-link">
                 <div class="card-content">
-                    <h3>Wonder Pet</h3>
-                    <p>A delightful virtual pet experience.</p>
-                    <div class="tags">
-                        <span class="tag">Game</span>
-                        <span class="tag">Virtual Pet</span>
+                    <div class="card-tag-wrapper">
+                        <h3>Wonder Pet</h3>
+                        <div class="tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Virtual Pet</span>
+                        </div>
                     </div>
+                    <p>A delightful virtual pet game built with engaging state management, interactive animations, and mini-games.</p>
                 </div>
-            </a>
+                <div class="card-footer">
+                    <button class="card-action-btn primary open-modal-btn" 
+                        data-project-title="Wonder Pet" 
+                        data-demo-type="web"
+                        data-project-url="https://worstace01.github.io/wonder-pet/" 
+                        data-github-url="https://github.com/Worstace01/wonder-pet"
+                        aria-label="Preview Wonder Pet Live App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Live Demo</span>
+                    </button>
+                    <a href="https://github.com/Worstace01/wonder-pet" target="_blank" rel="noopener noreferrer" class="card-action-btn secondary" aria-label="View Wonder Pet Source Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
 
         </div>
     </section>
 
     <section id="about">
         <h2 class="section-header reveal">Expertise</h2>
-        <div class="skills-container reveal">
-            <div class="skill-item hover-link">User Interface Design</div>
-            <div class="skill-item hover-link">Frontend Development</div>
-            <div class="skill-item hover-link">Motion Graphics</div>
-            <div class="skill-item hover-link">Design Systems</div>
-            <div class="skill-item hover-link">Accessibility (a11y)</div>
-            <div class="skill-item hover-link">Server Side Rendering</div>
-        </div>
+        <ul class="skills-container reveal">
+            <li class="skill-item hover-link">User Interface Design</li>
+            <li class="skill-item hover-link">Frontend Development</li>
+            <li class="skill-item hover-link">Motion Graphics</li>
+            <li class="skill-item hover-link">Design Systems</li>
+            <li class="skill-item hover-link">Accessibility (a11y)</li>
+            <li class="skill-item hover-link">Server Side Rendering</li>
+        </ul>
     </section>
 
     <section id="certificates">
@@ -193,7 +317,7 @@
                 <div class="cert-meta">
                     <span class="cert-id">ID: 892-332-LSA</span>
                 </div>
-                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                <a href="https://github.com/Worstace01" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify Credential">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -212,7 +336,7 @@
                 <div class="cert-meta">
                     <span class="cert-id">ID: G-449201</span>
                 </div>
-                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                <a href="https://github.com/Worstace01" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify Credential">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -231,7 +355,7 @@
                 <div class="cert-meta">
                     <span class="cert-id">ID: K92-JD8-22</span>
                 </div>
-                <a href="#" target="_blank" class="cert-link" aria-label="Verify Credential">
+                <a href="https://github.com/Worstace01" target="_blank" rel="noopener noreferrer" class="cert-link" aria-label="Verify Credential">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -249,14 +373,65 @@
             <div class="contact-info reveal">
                 <h2 class="section-header">Let's Talk</h2>
                 <p>I'm currently available for freelance projects and open to full-time opportunities. If you have an
-                    idea, let's make it happen.</p>
+                    idea or project in mind, let's connect and build something extraordinary.</p>
+                
                 <a href="mailto:andriedeuna@gmail.com" class="email-link hover-link">andriedeuna@gmail.com</a>
+
+                <div class="social-links">
+                    <a href="https://github.com/Worstace01" target="_blank" rel="noopener noreferrer" class="social-btn hover-link" aria-label="GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:andriedeuna@gmail.com" class="social-btn hover-link" aria-label="Email Me">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>Email</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Interactive Live Preview Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <h3 id="modal-title">Project Live Demo</h3>
+                    <span id="modal-badge-text" class="modal-badge">Live App Preview</span>
+                </div>
+                <div class="modal-header-actions">
+                    <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-header-btn secondary" aria-label="View Source Code on GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span>GitHub Repo</span>
+                    </a>
+                    <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="modal-header-btn primary" aria-label="Open App in New Tab">
+                        <span>Open App URL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <button id="modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-loader">
+                    <div class="spinner"></div>
+                    <p>Loading Live Preview...</p>
+                </div>
+                <iframe id="modal-iframe" src="about:blank" title="Project Live Web Preview" loading="lazy"></iframe>
+                <video id="modal-video" controls loop autoplay muted style="display:none; width:100%; height:100%; object-fit:contain;"></video>
+                <div id="video-fallback-card" class="video-fallback-container" style="display:none;">
+                    <div class="fallback-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 7 4-7 4Z"/></svg>
+                    </div>
+                    <h4>Video Demo Showcase Ready</h4>
+                    <p>This backend/desktop project uses live video previewing. Add your video demo file or link in <code>data-video-url</code> or launch the GitHub repo to inspect source code.</p>
+                    <a id="fallback-repo-btn" href="#" target="_blank" rel="noopener noreferrer" class="cta-btn primary hover-link">Inspect GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 Portfolio. All Rights Reserved.</p>
+        <p>&copy; 2026 Andrie Deuna. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
