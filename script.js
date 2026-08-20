@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectModal = document.getElementById('project-modal');
     const modalIframe = document.getElementById('modal-iframe');
     const modalVideo = document.getElementById('modal-video');
+    const modalLoader = document.querySelector('.modal-loader');
     const videoFallbackCard = document.getElementById('video-fallback-card');
     const fallbackRepoBtn = document.getElementById('fallback-repo-btn');
     const modalBadgeText = document.getElementById('modal-badge-text');
@@ -166,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (modalIframe) modalIframe.style.display = 'none';
                 if (modalVideo) modalVideo.style.display = 'none';
                 if (videoFallbackCard) videoFallbackCard.style.display = 'none';
+                if (modalLoader) modalLoader.style.display = 'none';
 
                 if (demoType === 'video') {
                     if (modalBadgeText) modalBadgeText.textContent = 'Video Demo Showcase';
@@ -180,8 +182,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     if (modalBadgeText) modalBadgeText.textContent = 'Live Web App';
                     if (modalIframe) {
+                        if (modalLoader) modalLoader.style.display = 'flex';
                         modalIframe.src = projectUrl || 'about:blank';
                         modalIframe.style.display = 'block';
+                        modalIframe.onload = () => {
+                            if (modalLoader) modalLoader.style.display = 'none';
+                        };
                     }
                 }
 
@@ -199,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 modalVideo.pause();
                 modalVideo.src = '';
             }
+            if (modalLoader) modalLoader.style.display = 'none';
             document.body.style.overflow = '';
         };
 
@@ -218,7 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
 
     // --- THEME TOGGLE ---
     const themeToggleBtn = document.getElementById('theme-toggle');
